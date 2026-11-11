@@ -1,6 +1,12 @@
 server:
   port: 0
 
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5436/recommendation_db
+    username: recommendation_user
+    password: ${RECOMMENDATION_DB_PASSWORD}
+
 eureka:
   instance:
     instance-id: "${spring.application.name}:${random.uuid}"
@@ -17,4 +23,3 @@ management:
 content:
   service:
     url: http://CONTENT-MS
-
