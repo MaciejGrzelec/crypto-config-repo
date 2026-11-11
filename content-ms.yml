@@ -42,3 +42,6 @@ info:
     name: content-ms
     description: Microservice for cryptocurrency content
     version: 1.0.0
+    
+content:
+  config-source: github
